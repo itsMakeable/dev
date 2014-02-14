@@ -7,5 +7,11 @@ Landing Page
 
 ```roots watch```
 
+To depoy:
+
+```roots compress``` will output HTML
+
+```roots gh-pages``` will deploy to Github pages
+
 ### Staging/Production
 This site is live at http://dev.itsmakeable.com
