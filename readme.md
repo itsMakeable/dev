@@ -9,7 +9,7 @@ Landing Page
 
 To depoy:
 
-```roots compress``` will output HTML
+```roots compile``` will output HTML
 
 ```roots gh-pages``` will deploy to Github pages
 
