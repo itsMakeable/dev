@@ -1,10 +1,11 @@
-Your Project Name
+Makeable Development
 =================
-A brief summary of your project
+Landing Page
 
 ### Setup / Installation
-Some instructions on how to set up and/or install this project
+```npm install roots -g```
+
+```roots watch```
 
 ### Staging/Production
-This site is staged at http://example.com [u: admin p: example]    
-This site is live at http://example.com
+This site is live at http://dev/.itsmakeable.com
