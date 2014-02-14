@@ -505,6 +505,31 @@ h1 {
   top: 9.18rem;
   left: -4.55rem;
 }
+@media screen and (max-width: 1024px) {
+  .gears-group {
+    width: 70%;
+    position: relative;
+    top: 5rem;
+  }
+  .gears-group svg:nth-child(1) {
+    width: 80%;
+    margin: auto;
+    display: block;
+  }
+  .gears-group svg:nth-child(2) {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .gears-group {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .gears-group {
+    width: 98%;
+  }
+}
 .github {
   position: fixed;
   bottom: 5rem;
@@ -512,7 +537,7 @@ h1 {
   width: 100%;
 }
 .github svg {
-  width: 3%;
+  width: 5rem;
 }
 .github path {
   -webkit-transition: all 0.3s ease;

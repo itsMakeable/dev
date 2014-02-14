@@ -97,8 +97,22 @@ h1
 			&:nth-child(2)
 				position relative
 				top 9.18rem
-				left -4.55rem
-
+				left -4.55rem				
+	@media screen and (max-width: 1024px)
+		width 70%
+		position relative
+		top 5rem
+		svg
+			&:nth-child(1)
+				width 80%
+				margin auto
+				display block
+			&:nth-child(2)
+				display none
+	@media screen and (max-width: 768px)
+		width 90%
+	@media screen and (max-width: 420px)
+		width 98%
 
 // GITHUB ///////////////////////////////////////
 
@@ -107,7 +121,7 @@ h1
 	text-align center
 	width 100%
 	svg
-		width 3%
+		width 5rem
 	path
 		@extend .gray-path
 		transition all 0.3s ease
