@@ -1,11 +1,125 @@
 @import '_settings'
+@import 'fonts'
 
 global-reset()
 base()
 
+
+// IR ///////////////////////////////////////////
+
+ir-h5bp(url=none, width=none, height=width)
+	unless (url == none) { background url }
+	border 0
+	color transparent
+	font 0/0 a
+	unless (height == none) { height height }
+	text-shadow none
+	unless (width == none) { width width }
+
+
+// GENERAL //////////////////////////////////////
+
 html
 	height 100%
+	fs(62.5%)
+
 body
 	height 100%
 	bg('background-dark.png')
 	background-size cover
+
+img,video,audio,embed,object,input,iframe,svg
+	width 100%
+	max-width 100%
+
+svg
+	pointer-events: none
+
+.container	
+	max-width 144rem
+	margin auto
+
+a
+	border 0
+	text-decoration none
+	color #484848
+	&:hover
+		text-decoration none
+	&:hover, &:active
+		border 0
+		text-decoration none
+		color #484848
+		
+//VAR ///////////////////////////////////////////
+.orange-path
+	fill:	#EF6924
+.liteorange-path
+	fill: #F8971D
+.gray-path
+	fill: #484848
+// TYPOGRAPHY //////////////////////////////////
+
+h1
+	color #484848
+	font-family: 'Sonus Light';
+	fs(2rem)
+	margin-top 20rem
+	text-align center	
+	
+
+// SVG ///////////////////////////////////////////
+.gears-group
+	width 80rem
+	height 60%
+	position absolute
+	top 0
+	bottom 0
+	left 0
+	right 0
+	margin auto
+	svg
+		display inline-block
+		&:nth-child(1)
+			animation spin 12s linear 0s infinite forwards
+			width 49.5%
+			path:nth-of-type(1)
+				@extend .orange-path
+			path:nth-of-type(n+2)
+				@extend .liteorange-path
+		
+		&:nth-child(2)
+			width 49.5%
+			animation spin 12s linear 0s infinite reverse
+			path:nth-of-type(1)
+				@extend .orange-path
+			path:nth-of-type(2)
+				@extend .liteorange-path
+			&:nth-child(2)
+				position relative
+				top 9.18rem
+				left -4.55rem
+
+
+// GITHUB ///////////////////////////////////////
+
+.github
+	fixed bottom 5rem
+	text-align center
+	width 100%
+	svg
+		width 3%
+	path
+		@extend .gray-path
+		transition all 0.3s ease
+	&:hover path
+		@extend .orange-path
+
+
+
+// ANIMATION ////////////////////////////////////
+
+@keyframes spin
+	0%
+		transform rotate(0deg)
+	100%
+		transform rotate(360deg)

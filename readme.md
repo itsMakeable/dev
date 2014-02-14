@@ -8,4 +8,4 @@ Landing Page
 ```roots watch```
 
 ### Staging/Production
-This site is live at http://dev/.itsmakeable.com
+This site is live at http://dev.itsmakeable.com
